@@ -17,10 +17,12 @@ class MealDetailScreen extends StatelessWidget {
             floating: true,
             backgroundColor: const Color(0xFF200087),
             expandedHeight: 300,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(40))),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(40))),
             flexibleSpace: FlexibleSpaceBar(
               background: ClipRRect(
-                borderRadius: BorderRadius.vertical(bottom: Radius.circular(40)),
+                borderRadius:
+                    BorderRadius.vertical(bottom: Radius.circular(40)),
                 child: Image.asset(
                   meal.imagePath,
                   fit: BoxFit.cover,
@@ -62,7 +64,10 @@ class MealDetailScreen extends StatelessWidget {
                           ),
                           Text(
                             "${meal.kiloCaloriesBurnt} kcal",
-                            style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w600, fontSize: 16),
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 16),
                           ),
                         ],
                       ),
@@ -81,7 +86,10 @@ class MealDetailScreen extends StatelessWidget {
                           ),
                           Text(
                             "${meal.timeTaken} mins",
-                            style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w600, fontSize: 16),
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 16),
                           )
                         ],
                       ),
@@ -140,7 +148,8 @@ class MealDetailScreen extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 16, right: 16, bottom: 32),
+                  padding:
+                      const EdgeInsets.only(left: 16, right: 16, bottom: 32),
                   child: Text(
                     meal.preparation,
                     style: TextStyle(
